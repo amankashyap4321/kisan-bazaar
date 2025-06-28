@@ -47,7 +47,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-20 bg-blue-100/70 backdrop-blur-md border-b border-blue-200 shadow-md">
+      <nav className=" top-0 left-0 w-full z-20 bg-blue-100/70 backdrop-blur-md border-b border-blue-200 shadow-md">
         <div className="flex flex-wrap items-center justify-between mx-auto px-4 md:px-12 h-12">
           <a href="/" className="flex items-center">
             <span className="text-xl md:text-2xl font-medium whitespace-nowrap">

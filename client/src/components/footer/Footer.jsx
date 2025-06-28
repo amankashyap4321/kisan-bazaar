@@ -17,9 +17,7 @@ const Footer = () => {
           <a href={"https://www.linkedin.com/in/aryan-tyagi-08168b2a8/"} target="_blank">
             <FaLinkedinIn />
           </a>
-          <a href={"/"}>
-            <FaGooglePlusG />
-          </a>
+
           <a href={"https://www.instagram.com/aman_kashyap.4/"} target="_blank">
             <FaInstagram />     
           </a>

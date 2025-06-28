@@ -1,3 +1,5 @@
+![WhatsApp Image 2025-06-28 at 16 18 06_d41c331e](https://github.com/user-attachments/assets/4dcb02f1-353e-4954-a722-4ef103b8cc87)
+
 # KisanBazaar
 
 kisanbazaar is a web platform designed for wholesale crop trading, connecting sellers and consumers seamlessly. Although still in development, kisan bazaar offers a robust set of features for both sellers and consumers in the agricultural marketplace.

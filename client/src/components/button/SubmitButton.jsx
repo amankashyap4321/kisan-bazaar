@@ -28,7 +28,7 @@ const SubmitButton = ({ text, isLoading }) => {
     >
       {isLoading && <Spinner width="w-5" color="#ffffff" />}
       {text}
-    </button>
+    </button>  
   );
 };
 

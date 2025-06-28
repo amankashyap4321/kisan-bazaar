@@ -59,7 +59,7 @@ function Hero() {
               transition={{ delay: 0.5, duration: 1 }}
 
             >
-              Kisan <strong className="font-bold text-rose-700">Bazaar</strong>
+              Kisan<strong className="font-bold text-rose-700">Bazaar</strong>
             </motion.h1>
 
             <motion.p

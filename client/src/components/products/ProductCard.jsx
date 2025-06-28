@@ -39,7 +39,7 @@ function ProductCard({ data, addOverlay = false }) {
               {data.name}
             </h1>
             <h2 className="text-xs mb-1 md:mb-2 font-medium text-gray-400">
-              BRAND: {data.brand}
+              Kisan ID: {data.brand}
             </h2>
             <p className="mb-1 text-sm md:text-base text-red-500 font-semibold">
               Rs.{data.pricePerUnit}/{data.measuringUnit}

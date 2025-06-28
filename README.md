@@ -61,7 +61,7 @@ To run kisan bazaar locally, ensure you have NodeJS and MongoDB installed. Follo
     ```
 
 2. **Frontend Setup**:
-    - Navigate to the CropConnect `client` folder.
+    - Navigate to the kisan-bazaar `client` folder.
     - Create a `.env` file in the root directory of the `client` folder.
     - Add the following environment variables to the client `.env` file:
         ```plaintext
@@ -75,7 +75,7 @@ To run kisan bazaar locally, ensure you have NodeJS and MongoDB installed. Follo
         ```
 
 3. **Backend Setup**:
-    - Navigate to the CropConnect `server` folder.
+    - Navigate to the kisan-bazaar `server` folder.
     - Create a `.env` file in the root directory of the `server` folder.
     - Add the following environment variables to the server `.env` file:
         ```plaintext
@@ -89,7 +89,7 @@ To run kisan bazaar locally, ensure you have NodeJS and MongoDB installed. Follo
         CLOUDINARY_API_SECRET = {cloudinary api secret}
         ```
     - To setup the Backend:
-          ```bash
+          ```
           npm install -g nodemon
           npm install mongoose
           ```

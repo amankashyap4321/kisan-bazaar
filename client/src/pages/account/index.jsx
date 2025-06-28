@@ -33,8 +33,8 @@ function LoginAndSignup() {
     if (isSignInForm) {
       setFormData((prevData) => ({
         ...prevData,
-        email: "jaloh53056@jahsec.com",
-        password: "12345678",
+        email: "ak8835388@gmail.com",
+        password: "1234567890",
       }));
     } else {
       setFormData((prevData) => ({ ...prevData, email: "", password: "" }));
@@ -141,8 +141,8 @@ function LoginAndSignup() {
               <div className="text-xs font-medium text-rose-600">
                 *In case you don't want to create an account, you can use the
                 following credentials to login: <br />
-                Email: jaloh53056@jahsec.com <br />
-                Password: 12345678
+                Email: ak8835388@gmail.com <br />
+                Password: 1234567890
               </div>
             ) : (
               <div className="text-xs font-medium text-rose-600">

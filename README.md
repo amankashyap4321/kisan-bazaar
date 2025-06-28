@@ -1,11 +1,6 @@
 # KisanBazaar
 
-kisanbazaar is a web platform designed for wholesale crop trading, connecting sellers and consumers seamlessly. Although still in development, CropConnect offers a robust set of features for both sellers and consumers in the agricultural marketplace.
-
-
-## Architecture
-
-![diagram-export-8-15-2024-7_52_30-PM](https://github.com/user-attachments/assets/6587f476-8c76-4232-9ea5-5988ff6f3624)
+kisanbazaar is a web platform designed for wholesale crop trading, connecting sellers and consumers seamlessly. Although still in development, kisan bazaar offers a robust set of features for both sellers and consumers in the agricultural marketplace.
 
 ## Features
 
@@ -57,12 +52,12 @@ kisanbazaar is a web platform designed for wholesale crop trading, connecting se
 
 ## Installation
 
-To run CropConnect locally, ensure you have NodeJS and MongoDB installed. Follow these steps:
+To run kisan bazaar locally, ensure you have NodeJS and MongoDB installed. Follow these steps:
 
 1. **Clone the repository**:
     ```bash
     git clone <repository-url>
-    cd CropConnect
+    cd kisan-bazaar
     ```
 
 2. **Frontend Setup**:
@@ -70,8 +65,8 @@ To run CropConnect locally, ensure you have NodeJS and MongoDB installed. Follow
     - Create a `.env` file in the root directory of the `client` folder.
     - Add the following environment variables to the client `.env` file:
         ```plaintext
-        VITE_CROPCONNECT_API = "https://cropconnect-backend.vercel.app/" 
-        # Replace if you want to run the Backend local server to http://localhost:8080/
+        VITE_CROPCONNECT_API = "http://localhost:8080/" 
+        # Replace if you want to run the Backend local server to 
         ```
     - To run the Frontend:
         ```bash
@@ -102,11 +97,11 @@ To run CropConnect locally, ensure you have NodeJS and MongoDB installed. Follow
         node index.js
         ```
 
-By following these steps, you'll have the CropConnect application running locally on your machine. Adjust configurations as needed for your development environment.
+By following these steps, you'll have the Kisan Bazaar application running locally on your machine. Adjust configurations as needed for your development environment.
 
 ## Contribution
 
-CropConnect welcomes contributions from the community. Feel free to open issues or submit pull requests to help improve the platform.
+Kisan bazaar welcomes contributions from the community. Feel free to open issues or submit pull requests to help improve the platform.
 
 
-**If you find this project helpful, we'd appreciate it if you could give it a star ⭐.**
+

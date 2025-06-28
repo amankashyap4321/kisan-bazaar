@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import useProgressiveImg from "../../hooks/image/useProgressiveImg";
+import heroVideo from "../../assets/hero.mp4";
 
 function Hero() {
   const [src, { blur }] = useProgressiveImg(
@@ -16,7 +17,8 @@ function Hero() {
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           <video
             className="w-full h-full object-cover pointer-events-none"
-            src="https://cdn.pixabay.com/video/2024/02/05/199341-910144573_large.mp4"
+            // src="https://cdn.pixabay.com/video/2024/02/05/199341-910144573_large.mp4"
+            src={heroVideo}
             autoPlay
             loop
             muted

@@ -89,8 +89,10 @@ To run kisan bazaar locally, ensure you have NodeJS and MongoDB installed. Follo
         CLOUDINARY_API_SECRET = {cloudinary api secret}
         ```
     - To setup the Backend:
-          ```
+          ```bash
+      
           npm install -g nodemon
+      
           npm install mongoose
           ```
     - To run the Backend:

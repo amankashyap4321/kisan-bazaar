@@ -49,7 +49,7 @@ const signup = async (req, res) => {
       } else if (type === "seller" && error.keyPattern.brandName) {
         return res
           .status(409)
-          .send({ message: "This brand name already exists" });
+          .send({ message: "This Kisan ID already exists" });
       }
     }
 

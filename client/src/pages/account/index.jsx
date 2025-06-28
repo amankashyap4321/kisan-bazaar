@@ -103,7 +103,7 @@ function LoginAndSignup() {
                       toUpdate={"brandName"}
                     />
                     <InputTag
-                      label={"Kisaan ID"}
+                      label={"Kisan ID"}
                       placeholder={"abc"}
                       type={"text"}
                       outlineColor={"outline-green-700"}
@@ -140,7 +140,7 @@ function LoginAndSignup() {
               toUpdate={"password"}
             />
 
-            {/* Kisaan ID for Seller Sign In */}
+            {/* Kisaan ID for Seller Sign In
             {type === "seller" && isSignInForm && (
               <InputTag
                 label={"Kisaan ID"}
@@ -151,7 +151,7 @@ function LoginAndSignup() {
                 setFormData={setFormData}
                 toUpdate={"kisaanId"}
               />
-            )}
+            )} */}
 
             <SubmitButton
               text={isSignInForm ? "Sign In" : "Create account"}

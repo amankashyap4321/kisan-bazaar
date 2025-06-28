@@ -92,8 +92,9 @@ To run kisan bazaar locally, ensure you have NodeJS and MongoDB installed. Follo
           ```bash
       
           npm install -g nodemon
-      
+   
           npm install mongoose
+      #run these bash code in terminal to install nodemon & mongoose   
           ```
     - To run the Backend:
         ```bash

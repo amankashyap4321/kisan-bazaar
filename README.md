@@ -66,7 +66,7 @@ To run kisan bazaar locally, ensure you have NodeJS and MongoDB installed. Follo
     - Add the following environment variables to the client `.env` file:
         ```plaintext
         VITE_CROPCONNECT_API = "http://localhost:8080/" 
-       
+        npm install
         ```
     - To run the Frontend:
         ```bash
@@ -88,6 +88,11 @@ To run kisan bazaar locally, ensure you have NodeJS and MongoDB installed. Follo
         CLOUDINARY_API_KEY = {cloudinary api key}
         CLOUDINARY_API_SECRET = {cloudinary api secret}
         ```
+    - To setup the Backend:
+          ```bash
+          npm install -g nodemon
+          npm install mongoose
+          ```
     - To run the Backend:
         ```bash
         # Use nodemon for automatic server restarts upon file changes

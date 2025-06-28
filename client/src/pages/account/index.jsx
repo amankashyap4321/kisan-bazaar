@@ -19,9 +19,15 @@ function LoginAndSignup() {
     brandName: "",
     email: "",
     password: "",
+    kisaanId: "abc",
   });
 
   const handleAuth = async () => {
+    if (type === "seller" && isSignInForm && formData.kisaanId !== "abc") {
+      alert("Invalid Kisaan ID. Please enter 'abc'.");
+      return;
+    }
+
     if (isSignInForm) {
       handleLogin(type, formData);
     } else {
@@ -35,14 +41,20 @@ function LoginAndSignup() {
         ...prevData,
         email: "ak8835388@gmail.com",
         password: "1234567890",
+        kisaanId: "abc",
       }));
     } else {
-      setFormData((prevData) => ({ ...prevData, email: "", password: "" }));
+      setFormData((prevData) => ({
+        ...prevData,
+        email: "",
+        password: "",
+        kisaanId: "abc",
+      }));
     }
   }, [isSignInForm]);
 
   return (
-    <section className="flex flex-col-reverse md:flex-row  md:h-screen">
+    <section className="flex flex-col-reverse md:flex-row md:h-screen">
       <SideImage type={type} />
       <div className="flex flex-col w-full lg:w-1/2 items-center justify-center px-6 py-8 lg:py-0">
         <div className="lg:p-6 space-y-4 md:space-y-6 sm:p-8 w-full">
@@ -54,11 +66,9 @@ function LoginAndSignup() {
               handleAuth();
             }}
           >
-            {/* For Sign Up */}
-
+            {/* Sign Up Fields */}
             {!isSignInForm && (
               <>
-                {/* Common for both seller and user */}
                 <InputTag
                   label={"Name"}
                   placeholder={"John"}
@@ -81,27 +91,32 @@ function LoginAndSignup() {
                   setFormData={setFormData}
                   toUpdate={"contact"}
                 />
-
-                {/* For Seller Specific */}
                 {type === "seller" && (
-                  <InputTag
-                    label={"Brand Name"}
-                    placeholder={"JohnVeggies"}
-                    type={"text"}
-                    outlineColor={
-                      type === "seller"
-                        ? "outline-green-700"
-                        : "outline-blue-600"
-                    }
-                    value={formData.brandName}
-                    setFormData={setFormData}
-                    toUpdate={"brandName"}
-                  />
+                  <>
+                    <InputTag
+                      label={"Brand Name"}
+                      placeholder={"JohnVeggies"}
+                      type={"text"}
+                      outlineColor={"outline-green-700"}
+                      value={formData.brandName}
+                      setFormData={setFormData}
+                      toUpdate={"brandName"}
+                    />
+                    <InputTag
+                      label={"Kisaan ID"}
+                      placeholder={"abc"}
+                      type={"text"}
+                      outlineColor={"outline-green-700"}
+                      value={formData.kisaanId}
+                      setFormData={setFormData}
+                      toUpdate={"kisaanId"}
+                    />
+                  </>
                 )}
               </>
             )}
 
-            {/* For Sign In */}
+            {/* Common Login Fields */}
             <InputTag
               label={"Email"}
               placeholder={"john@doe.com"}
@@ -125,12 +140,26 @@ function LoginAndSignup() {
               toUpdate={"password"}
             />
 
+            {/* Kisaan ID for Seller Sign In */}
+            {type === "seller" && isSignInForm && (
+              <InputTag
+                label={"Kisaan ID"}
+                placeholder={"abc"}
+                type={"text"}
+                outlineColor={"outline-green-700"}
+                value={formData.kisaanId}
+                setFormData={setFormData}
+                toUpdate={"kisaanId"}
+              />
+            )}
+
             <SubmitButton
               text={isSignInForm ? "Sign In" : "Create account"}
               bgColor={type === "seller" ? "bg-green-700" : "bg-blue-600"}
               hoverBgColor={type === "seller" ? "bg-green-600" : "bg-blue-700"}
               isLoading={isLoading}
             />
+
             <FormSwitch
               type={type}
               isSignInForm={isSignInForm}
@@ -139,18 +168,14 @@ function LoginAndSignup() {
 
             {isSignInForm ? (
               <div className="text-xs font-medium text-rose-600">
-                *In case you don't want to create an account, you can use the
-                following credentials to login: <br />
+                *In case you don't want to create an account, you can use the following credentials to login: <br />
                 Email: ak8835388@gmail.com <br />
                 Password: 1234567890
               </div>
             ) : (
               <div className="text-xs font-medium text-rose-600">
                 *It is recommended to use temporary mail for creating account.{" "}
-                <Link
-                  className="underline"
-                  to={"https://temp-mail.org/en/10minutemail"}
-                >
+                <Link className="underline" to={"https://temp-mail.org/en/10minutemail"}>
                   Click here to go to 10 minutes mail
                 </Link>
               </div>

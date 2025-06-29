@@ -94,22 +94,13 @@ function LoginAndSignup() {
                 {type === "seller" && (
                   <>
                     <InputTag
-                      label={"Brand Name"}
-                      placeholder={"JohnVeggies"}
+                      label={"Kisan ID"}
+                      placeholder={"abcd"}
                       type={"text"}
                       outlineColor={"outline-green-700"}
                       value={formData.brandName}
                       setFormData={setFormData}
                       toUpdate={"brandName"}
-                    />
-                    <InputTag
-                      label={"Kisan ID"}
-                      placeholder={"abc"}
-                      type={"text"}
-                      outlineColor={"outline-green-700"}
-                      value={formData.kisaanId}
-                      setFormData={setFormData}
-                      toUpdate={"kisaanId"}
                     />
                   </>
                 )}

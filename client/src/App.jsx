@@ -20,6 +20,7 @@ import SellerProducts from "./pages/seller_dashboard/SellerProducts";
 import SellerOrderRequests from "./pages/seller_dashboard/SellerOrderRequests";
 import SellerFAQs from "./pages/seller_dashboard/SellerFAQs";
 import CropSenseAI from "./pages/seller_dashboard/CropSenseAI";
+import KnowSubsidy from "./pages/seller_dashboard/KnowSubsidy";
 
 function App() {
   return (
@@ -70,6 +71,7 @@ function App() {
             path="/map/:latitude/:longitude"
             element={<ShowMap />}
           />
+          
           <Route
             exact
             path="/sellerdashboard/products/:operation"
@@ -80,6 +82,10 @@ function App() {
             exact
             path="/category/:type/details/:productId"
             element={<ProductDashboard />}
+          />
+          <Route 
+            
+             path="/seller/know-subsidy" element={<KnowSubsidy />}
           />
           <Route exact path="/orders" element={<Order />} />
           <Route exact path="/map" element={<LeafletMap />} />

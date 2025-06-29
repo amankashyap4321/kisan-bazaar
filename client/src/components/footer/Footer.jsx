@@ -6,6 +6,7 @@ import { FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  if (location.pathname === "/seller/know-subsidy") return null;
   return (
     <>
       <footer className="bg-red-900 text-white h-12 px-4 md:px-12 text-center flex flex-row items-center justify-between">

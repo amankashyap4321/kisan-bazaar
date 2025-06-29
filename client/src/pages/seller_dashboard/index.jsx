@@ -14,6 +14,7 @@ import SellerOverview from "./SellerOverview";
 import { RiBardFill } from "react-icons/ri";
 import CropSenseAI from "./CropSenseAI";
 import { useCookies } from "react-cookie";
+import KnowSubsidy from "./KnowSubsidy";
 
 
 const links = [
@@ -46,6 +47,12 @@ const links = [
     icon: <RiBardFill />,
     renderComponent: <CropSenseAI />,
     path: "cropsense-ai"
+  }, 
+  {
+    text: "Know Subsidy",
+    icon: <RiBardFill />, // You can use a better icon here
+    renderComponent: <KnowSubsidy />,
+    path: "/seller/know-subsidy"
   }
 ];
 

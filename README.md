@@ -1,4 +1,3 @@
-![WhatsApp Image 2025-06-28 at 16 18 06_d41c331e](https://github.com/user-attachments/assets/4dcb02f1-353e-4954-a722-4ef103b8cc87)
 
 # KisanBazaar
 

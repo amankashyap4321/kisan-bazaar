@@ -26,7 +26,6 @@
     "socket.io": "^4.7.4",
     "streamifier": "^0.1.1",
     "swagger-jsdoc": "^6.2.8",
-    "swagger-ui-express": "^5.0.0",
-    "vite": "^x.x.x"
+    "swagger-ui-express": "^5.0.0"
   }
 }

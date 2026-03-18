@@ -1,5 +1,5 @@
 
-# KisanBazaar
+# KisanBazaar...
 
 kisanbazaar is a web platform designed for wholesale crop trading, connecting sellers and consumers seamlessly. Although still in development, kisan bazaar offers a robust set of features for both sellers and consumers in the agricultural marketplace.
 
